@@ -3,15 +3,19 @@ from src.database import crudMongoDB
 from src.models.k9 import K9
 
 from dateutil import parser
+from bson.json_util import dumps
+
 
 class CrudServiceImpl(CrudService):
   def find_k9_by_name(k9_name: str) -> K9:
     k9 = crudMongoDB.find_k9_by_name(k9_name)
-    return k9
+    k9Json = dumps(k9)
+    return k9Json
 
   def find_all_k9s() -> list[K9]:
     k9s = crudMongoDB.find_all_k9s()
-    return k9s
+    k9sJson = dumps(k9s)
+    return k9sJson
 
   def insert_k9(k9: K9) -> K9:
     k9Exists = crudMongoDB.find_k9_by_name(k9.k9_name)

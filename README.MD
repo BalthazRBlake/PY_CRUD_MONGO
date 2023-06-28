@@ -54,3 +54,15 @@
 
   WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
   * Running on http://127.0.0.1:5000 
+
+- Helpful DOCS
+
+  [PyMongo](https://www.mongodb.com/languages/python)
+
+  [Flask Quick Start](https://flask.palletsprojects.com/en/2.3.x/quickstart/)
+
+  [Flask API](https://flask.palletsprojects.com/en/2.3.x/api/#flask.make_response)
+
+  [Flask Routing](https://hackersandslackers.com/flask-routes/)
+  
+  [Flask Templates](https://flask.palletsprojects.com/en/2.3.x/tutorial/templates/)
